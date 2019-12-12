@@ -1,4 +1,4 @@
-package ly.com.flutter_mapbox_gray_example;
+package com.looyo.flutter_mapbox_gray_example;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ly.com.flutter_mapbox_gray_example">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.looyo.flutter_mapbox_gray_example">
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -9,7 +10,11 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="flutter_mapbox_gray_example"
+        tools:replace="android:appComponentFactory"
+        android:appComponentFactory="whateverString"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.mapbox.token" android:value="pk.eyJ1IjoianpwZW5nYSIsImEiOiJjazJ2Z3Z5aGcwNHl3M2xtdnhrajgzbWc0In0.RmJf9zfBwrmYNdDCAo4W7Q" />
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
